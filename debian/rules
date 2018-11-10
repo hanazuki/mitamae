@@ -1,0 +1,30 @@
+#!/usr/bin/make -f
+export DH_VERBOSE = 2
+
+%:
+	dh $@ --builddirectory=mruby
+
+override_dh_update_autotools_config:
+
+override_dh_clean:
+	dh_clean
+	if test -d mruby; then make -C mruby clean; fi
+
+override_dh_auto_configure:
+	mkdir -p debian/tmp
+	if ! test -f debian/tmp/mruby-1.3.0.tar.gz; then \
+		curl -fsSL https://github.com/mruby/mruby/archive/1.3.0.tar.gz -o debian/tmp/mruby-1.3.0.tar.gz.tmp && \
+		mv debian/tmp/mruby-1.3.0.tar.gz.tmp debian/tmp/mruby-1.3.0.tar.gz; fi
+	mkdir -p mruby
+	tar xf debian/tmp/mruby-1.3.0.tar.gz -C mruby --strip=1
+
+	dh_auto_configure
+
+override_dh_auto_build:
+	dh_auto_build -- MRUBY_CONFIG=../build_config.rb
+
+override_dh_auto_test:
+
+override_dh_auto_install:
+	install -d debian/tmp/usr/bin
+	install -t debian/tmp/usr/bin mruby/build/host/bin/mitamae

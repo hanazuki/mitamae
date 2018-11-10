@@ -1,0 +1,7 @@
+/.debhelper/
+/debhelper-build-stamp
+/tmp/
+/files
+
+/mitamae/
+/mitamae.substvars
