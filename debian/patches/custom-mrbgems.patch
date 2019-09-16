@@ -1,0 +1,19 @@
+From: Kasumi Hanazuki <kasumi@rollingapple.net>
+Date: Mon, 16 Sep 2019 08:49:27 +0000
+Subject: Include custom mrbgems
+
+---
+ mrbgem.rake | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/mrbgem.rake b/mrbgem.rake
+index f6d32f8..5b2a4a9 100644
+--- a/mrbgem.rake
++++ b/mrbgem.rake
+@@ -36,4 +36,6 @@ MRuby::Gem::Specification.new('mitamae') do |spec|
+   spec.add_dependency 'mruby-etc',       github: 'eagletmt/mruby-etc'
+   spec.add_dependency 'mruby-uri',       github: 'zzak/mruby-uri'
+   spec.add_dependency 'mruby-schash',    github: 'tatsushid/mruby-schash'
++
++  spec.add_dependency 'mitamae-secrets', github: 'eagletmt/mitamae-secrets'
+ end

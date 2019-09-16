@@ -1,3 +1,9 @@
+mitamae (1.9.0-exapico1) UNRELEASED; urgency=medium
+
+  * Upstream version 1.9.0
+
+ -- Kasumi Hanazuki <kasumi@rollingapple.net>  Mon, 16 Sep 2019 08:40:06 +0000
+
 mitamae (1.6.3-exapico1) unstable; urgency=medium
 
   * Initial release
