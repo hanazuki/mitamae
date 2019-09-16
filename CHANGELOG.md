@@ -1,3 +1,63 @@
+## v1.9.0
+
+- Upgrade mruby-yaml
+  - Disable `y`/`n` as shorthands of `true`/`false` [mruby-yaml#10](https://github.com/mrbgems/mruby-yaml/pull/10)
+  - Update libyaml from v0.1.6 to v0.2.2 [mruby-yaml#15](https://github.com/mrbgems/mruby-yaml/pull/15)
+
+## v1.8.0
+
+- `http_request` resource drops `check_error` attribute (v1.7.4 feature) and always raises
+  exceptions on 4XX or 5XX responses [#85](https://github.com/itamae-kitchen/mitamae/pull/85)
+
+## v1.7.8
+
+- Support Clear Linux OS [mruby-specinfra#10](https://github.com/itamae-kitchen/mruby-specinfra/pull/10)
+
+## v1.7.7
+
+- Add `Node#validate!` like Itamae [#83](https://github.com/itamae-kitchen/mitamae/pull/83)
+
+## v1.7.6
+
+- Allow using `content` attribute in `template` resource
+
+## v1.7.5
+
+- Upgrade mruby to v2.0.1
+
+## v1.7.4
+
+- Add `check_error` attribute to `http_request` resource
+
+## v1.7.3
+
+- Fix `file` resource error when it has `user` attribute which is not the same as mitamae executor.
+
+## v1.7.2
+
+- Support Amazon Linux 2 [mruby-specinfra#9](https://github.com/itamae-kitchen/mruby-specinfra/pull/9)
+
+## v1.7.1
+
+- Deduplicate delayed notifications
+  - The same notification by subscribes/notifices will run only once
+
+## v1.7.0
+
+- Upgrade mruby to v2.0.0
+
+## v1.6.6
+
+- Change JSON parse/generator from mruby-iijson to mruby-json to support `JSON.pretty_generate`
+
+## v1.6.5
+
+- Fix LocalJumpError inside `Hash#uniq` by backporting mruby's patch
+
+## v1.6.4
+
+- Support group name with spaces [mruby-specinfra#8](https://github.com/itamae-kitchen/mruby-specinfra/pull/8)
+
 ## v1.6.3
 
 - Fix an error by creating a file with `content ""` with `owner`/`group` specified
