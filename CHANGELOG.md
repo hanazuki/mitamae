@@ -1,3 +1,28 @@
+## v1.9.5
+
+- Upgrade mruby-yaml
+  - YAML.dump stops generating a double quotes literal when a string includes double quotes
+
+## v1.9.4
+
+- Upgrade mruby-yaml
+  - Introduce `Object#to_yaml`
+  - Psych-compatible multi-line literal is generated on YAML.dump
+
+## v1.9.3
+
+- Fix debug logs of defined resource (added since v1.9.2) to show correct names
+
+## v1.9.2
+
+- Respect `only_if`/`not_if` in a resource defined by `define`
+
+## v1.9.1
+
+- Upgrade mruby-yaml
+  - YAML.dump generates double quotes for String not starting with alphabet or number.
+  - Like CRuby's Psych, YAML.dump no longer generates `...`
+
 ## v1.9.0
 
 - Upgrade mruby-yaml
