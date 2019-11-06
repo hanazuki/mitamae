@@ -1,9 +1,9 @@
-mitamae (1.9.5-exapico1) UNRELEASED; urgency=medium
+mitamae (1.9.5-exapico1) unstable; urgency=medium
 
   * Upstream version 1.9.5
   * Fix Build-Depends: include bison
 
- -- Kasumi Hanazuki <kasumi@rollingapple.net>  Mon, 16 Sep 2019 08:40:06 +0000
+ -- Kasumi Hanazuki <kasumi@rollingapple.net>  Wed, 06 Nov 2019 09:36:02 +0000
 
 mitamae (1.6.3-exapico1) unstable; urgency=medium
 
