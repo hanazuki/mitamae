@@ -3,17 +3,21 @@ Date: Mon, 16 Sep 2019 08:49:27 +0000
 Subject: Include custom mrbgems
 
 ---
- mrbgem.rake | 2 ++
- 1 file changed, 2 insertions(+)
+ build_config.rb | 4 ++++
+ 1 file changed, 4 insertions(+)
 
-diff --git a/mrbgem.rake b/mrbgem.rake
-index f6d32f8..5b2a4a9 100644
---- a/mrbgem.rake
-+++ b/mrbgem.rake
-@@ -36,4 +36,6 @@ MRuby::Gem::Specification.new('mitamae') do |spec|
-   spec.add_dependency 'mruby-etc',       github: 'eagletmt/mruby-etc'
-   spec.add_dependency 'mruby-uri',       github: 'zzak/mruby-uri'
-   spec.add_dependency 'mruby-schash',    github: 'tatsushid/mruby-schash'
+diff --git a/build_config.rb b/build_config.rb
+index 6f27fae..95b1b4f 100644
+--- a/build_config.rb
++++ b/build_config.rb
+@@ -12,6 +12,10 @@ def gem_config(conf)
+   conf.gem github: 'k0kubun/mruby-erb',  checksum_hash: '978257e478633542c440c9248e8cdf33c5ad2074'
+   conf.gem github: 'mrbgems/mruby-yaml', checksum_hash: '94f429717fd234767a15186beacdc50ae582463c'
+   conf.gem github: 'eagletmt/mruby-etc', checksum_hash: 'v0.1.0'
 +
-+  spec.add_dependency 'mitamae-secrets', github: 'eagletmt/mitamae-secrets'
++  conf.gem github: 'eagletmt/mitamae-secrets', checksum_hash: '959716b8054f144ba26ba5b3b247ba4ccb54d591'
++  conf.gem github: 'hanazuki/mitamae-apt'    , checksum_hash: '2ad774b626b557dd81c85d5968f3882d73dc84c5'
++
  end
+ 
+ def debug_config(conf)
