@@ -5,7 +5,7 @@ Maintainer: Kasumi Hanazuki <kasumi@rollingapple.net>
 Build-Depends:
   debhelper (>= 11),
   ruby, curl, git, rake, bison,
-  libssl-dev
+  libssl-dev, libyaml-dev
 Standards-Version: 4.1.4
 Homepage: https://github.com/itamae-kitchen/mitamae
 Vcs-Browser: https://github.com/itamae-kitchen/mitamae

@@ -1,3 +1,10 @@
+mitamae (1.9.5-exapico2) UNRELEASED; urgency=medium
+
+  * Dynamically link to libyaml
+  * Include mitamae-apt mrbgem
+
+ -- Kasumi Hanazuki <kasumi@rollingapple.net>  Sat, 09 Nov 2019 23:54:59 +0000
+
 mitamae (1.9.5-exapico1) unstable; urgency=medium
 
   * Upstream version 1.9.5

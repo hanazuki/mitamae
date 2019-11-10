@@ -1,6 +1,8 @@
 #!/usr/bin/make -f
 export DH_VERBOSE = 2
 
+export MRUBY_YAML_USE_SYSTEM_LIBRARY=1
+
 %:
 	dh $@ --builddirectory=mruby
 

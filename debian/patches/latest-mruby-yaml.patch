@@ -1,0 +1,21 @@
+From: Kasumi Hanazuki <kasumi@rollingapple.net>
+Date: Sat, 9 Nov 2019 23:53:37 +0000
+Subject: Use latest mruby-yaml
+
+---
+ build_config.rb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/build_config.rb b/build_config.rb
+index fbdd66f..61ea33e 100644
+--- a/build_config.rb
++++ b/build_config.rb
+@@ -10,7 +10,7 @@ def gem_config(conf)
+   conf.gem mgem: 'mruby-shellwords',     checksum_hash: '2a284d99b2121615e43d6accdb0e4cde1868a0d8'
+   conf.gem mgem: 'mruby-specinfra',      checksum_hash: 'be5e6fe1c575106308ba49236c802a1ade925e45'
+   conf.gem github: 'k0kubun/mruby-erb',  checksum_hash: '978257e478633542c440c9248e8cdf33c5ad2074'
+-  conf.gem github: 'mrbgems/mruby-yaml', checksum_hash: '94f429717fd234767a15186beacdc50ae582463c'
++  conf.gem github: 'mrbgems/mruby-yaml', checksum_hash: '54c209bc44e50899e4077e7259dd13894d4bccab'
+   conf.gem github: 'eagletmt/mruby-etc', checksum_hash: 'v0.1.0'
+ 
+   conf.gem github: 'eagletmt/mitamae-secrets', checksum_hash: '959716b8054f144ba26ba5b3b247ba4ccb54d591'
