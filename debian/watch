@@ -1,0 +1,2 @@
+version=4
+https://github.com/itamae-kitchen/mitamae/releases /itamae-kitchen/mitamae/archive/v(.+)\.tar\.gz
