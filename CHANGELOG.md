@@ -1,3 +1,38 @@
+## v1.10.4
+
+- Pass a file name to `__FILE__` in a resource plugin instead of `(eval)`
+
+## v1.10.3
+
+- Load resource plugins properly with `--plugins`
+
+## v1.10.2
+
+- Upgrade specinfra [from v2.82.4 to v2.82.7](https://github.com/mizzy/specinfra/compare/v2.82.4...v2.82.7)
+  ([mruby-specinfra@f02c409...58981a4](https://github.com/itamae-kitchen/mruby-specinfra/compare/f02c409...58981a4))
+
+## v1.10.1
+
+- Add `--plugins` option to specify plugins directory
+- Change `MItamae` in help and log messages to `mitamae`
+
+## v1.10.0
+
+- Upgrade mruby-specinfra to an automated fork based on specinfra v2.82.4
+  [mruby-specinfra#12](https://github.com/itamae-kitchen/mruby-specinfra/pull/12)
+  - mruby-specinfra diff: [mruby-specinfra@21cd47d...f02c409](https://github.com/itamae-kitchen/mruby-specinfra/compare/21cd47d48cb15d4039cd8449f65cfc1ac1babe3b...f02c40935ab7c334bdb110edef243556e69e391b)
+  - upstream specinfra base is changed [from v2.60.2 to v2.82.4](https://github.com/mizzy/specinfra/compare/v2.60.2...v2.82.4)
+     - Some of the diff was already backported to mruby-specinfra individually. So the actual diff may vary.
+
+## v1.9.8
+
+- Detect OS name of CoreOS correctly [mruby-specinfra#11](https://github.com/itamae-kitchen/mruby-specinfra/pull/11)
+
+## v1.9.7
+
+- Stop defining `path`, `variables`, `source`, `recipe` local variables in recipe by default
+  - They have been accidentally exposed to recipes because of the environment of internal `instance_eval` call
+
 ## v1.9.6
 
 - Fix a crash when `file` resource handles a file with nameless owner
