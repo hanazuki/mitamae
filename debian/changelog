@@ -1,3 +1,9 @@
+mitamae (1.10.4-exapico1) UNRELEASED; urgency=medium
+
+  * Upstream version 1.10.4
+
+ -- Kasumi Hanazuki <kasumi@rollingapple.net>  Fri, 31 Jan 2020 15:07:46 +0000
+
 mitamae (1.9.6-exapico1) unstable; urgency=medium
 
   * Dynamically link to libyaml
