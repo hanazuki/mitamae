@@ -3,7 +3,8 @@ Section: admin
 Priority: optional
 Maintainer: Kasumi Hanazuki <kasumi@rollingapple.net>
 Build-Depends:
-  debhelper (>= 11),
+  debhelper (>= 11)
+Build-Depends-Arch:
   ruby, curl, git, rake, bison,
   libssl-dev, libyaml-dev, libapt-pkg-dev
 Standards-Version: 4.1.4
