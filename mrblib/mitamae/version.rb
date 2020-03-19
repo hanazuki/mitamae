@@ -1,3 +1,3 @@
 module MItamae
-  VERSION = "1.10.4"
+  VERSION = "1.11.6"
 end

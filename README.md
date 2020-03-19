@@ -56,6 +56,9 @@ See `mitamae help local` for available options. `--log-level=debug` is helpful t
 
 ## Documentation
 
+mitamae was built as an alternative implementation of [Itamae](https://github.com/itamae-kitchen/itamae).
+Therefore you may refer to resources related to Itamae for mitamae as well.
+
 ### How to write recipes
 
 Please refer to [Itamae wiki](https://github.com/itamae-kitchen/itamae/wiki):
@@ -81,6 +84,13 @@ Please refer to [Itamae wiki](https://github.com/itamae-kitchen/itamae/wiki):
 * [Node Attributes](https://github.com/itamae-kitchen/itamae/wiki/Node-Attributes)
 * [run\_command](https://github.com/itamae-kitchen/itamae/wiki/run_command)
 * [Host Inventory](https://serverspec.org/host_inventory.html)
+
+#### mitamae's original features
+
+They should be ported to Itamae at some point.
+
+* `not_if` / `only_if` can take a block instead of a command
+* `file`, `remote_file`, and `template` resources have `atomic_update` attribute
 
 ### Plugins
 

@@ -1,3 +1,48 @@
+## v1.11.6
+
+- Support `atomic_update` attribute in `file`, `remote_file`, and `template` resources
+
+## v1.11.5
+
+- Support `service` resource on Gentoo
+  - Upgrade specinfra [from v2.82.11 to v2.82.12](https://github.com/mizzy/specinfra/compare/v2.82.11...v2.82.12)
+    ([mruby-specinfra@feb32da...69fe430](https://github.com/itamae-kitchen/mruby-specinfra/compare/feb32da...69fe430))
+
+## v1.11.4
+
+- Make `node[:platform]` more robust on openSUSE
+  - Upgrade specinfra [from v2.82.10 to v2.82.11](https://github.com/mizzy/specinfra/compare/v2.82.10...v2.82.11)
+    ([mruby-specinfra@6caf46e...feb32da](https://github.com/itamae-kitchen/mruby-specinfra/compare/6caf46e...feb32da))
+
+## v1.11.3
+
+- Update Docker image for building released binaries
+
+## v1.11.2
+
+- Support aarch64 in binary releases
+
+## v1.11.1
+
+- Support `package` resource on OpenBSD
+  - Upgrade specinfra [from v2.82.9 to v2.82.10](https://github.com/mizzy/specinfra/compare/v2.82.9...v2.82.10)
+    ([mruby-specinfra@95994e4...6caf46e](https://github.com/itamae-kitchen/mruby-specinfra/compare/95994e4...6caf46e))
+
+## v1.11.0
+
+- Use musl-libc for x86\_64 Linux binary to remove libc dependency
+- Upgrade specinfra [from v2.82.8 to v2.82.9](https://github.com/mizzy/specinfra/compare/v2.82.8...v2.82.9)
+  ([mruby-specinfra@d67d734...95994e4](https://github.com/itamae-kitchen/mruby-specinfra/compare/d67d734...95994e4))
+
+## v1.10.5
+
+- Fix notifications to multiple `subscribes` from a single resource
+  - When multiple resources subscribed the same resource, only one of them had been notified since v1.7.1
+- Fix a notification message in `subscribes` to have a notified resource instead of a notifying resource
+- Upgrade specinfra [from v2.82.7 to v2.82.8](https://github.com/mizzy/specinfra/compare/v2.82.7...v2.82.8)
+  ([mruby-specinfra@58981a4...d67d734](https://github.com/itamae-kitchen/mruby-specinfra/compare/58981a4...d67d734))
+  - This resurrects the Symbol reference in `node[:ec2][:xxx]`, which was introduced in mitamae v1.5.5 and dropped in mitamae v1.10.0
+
 ## v1.10.4
 
 - Pass a file name to `__FILE__` in a resource plugin instead of `(eval)`
