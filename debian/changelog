@@ -1,3 +1,9 @@
+mitamae (1.11.7-exapico1) UNRELEASED; urgency=medium
+
+  * Upstream version 1.11.7
+
+ -- Kasumi Hanazuki <kasumi@rollingapple.net>  Wed, 29 Apr 2020 10:26:16 +0000
+
 mitamae (1.11.6-exapico1) unstable; urgency=medium
 
   * Upstream version 1.11.6
